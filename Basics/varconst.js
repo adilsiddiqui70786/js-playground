@@ -9,7 +9,7 @@ city = "Allahabad"    // bad programmming
 */
 
 
-let state; //undefined
+let state;  //undefined
 
 
 console.table([id, username, email, city, state]);
