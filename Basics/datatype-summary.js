@@ -56,4 +56,42 @@ const myFunction = function() {
     console.log("Hello javaScript");
 }
 
-myfunction();   // calling myfunction
+myFunction();   // calling myfunction
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++
+/* 
+Memory Concepts in Js
+
+ Stack (Primitive)  - All primitive types of data 
+                         are stored in Stack 
+                         
+                         
+ Heap(Non- Primitive) - non primitive datayped ARE stored 
+                       in Heap.
+
+    Changes are in Original
+   */     
+
+let myOldName = "Broken Aedil"
+
+let myNewName = myOldName
+
+myNewName = "Mohd Adil"
+
+console.log(myOldName); 
+console.log(myNewName); 
+
+
+
+let userOne = {
+    email: "userone@gmail.com",
+    password: 6578,
+}
+
+let userTwo = userOne
+
+userTwo.email = "usertwo@gmail.com"
+
+console.log(userOne);
+console.log(userTwo);
