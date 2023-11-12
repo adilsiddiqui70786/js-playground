@@ -56,9 +56,40 @@ console.log("C, ", myArr);  // [ 1, 2, 3 ]   it removes what we extract in origi
 fruits.splice(1, 0, 'peach', 'cherry'); // Adds 'peach' and 'cherry' at index 1
 fruits.splice(2, 1); // Removes 1 element at index 2
 
-console.log(fruits);
+// console.log(fruits);
+
+
+
+
+// console.log(myHeros.length);  // 2
+
+// const flowers = ["lotus", "Rose"];
+// let combinedArray = fruits.concat(flowers);  // concat return a new array
+// console.log(combinedArray); //  [ 'apple', 'peach', 'orange', 'banana', 'lotus', 'Rose' ]
+// fruits.push(flowers);
+
+// console.log(fruits);
+// console.log(fruits[4][1]);  // Rose
+
+// Spred
 
 let moreFruits = ['mango', 'pineapple'];
-let combinedArray = fruits.concat(moreFruits);
 
-console.log(myHeros.length);  //2
+const allfruits = [...fruits, ...moreFruits];
+console.log(allfruits);
+
+
+let newArray = [1, 2, [3, 4, 5], 6, [8, 9], 7];
+
+let realArr = newArray.flat(Infinity);
+console.log(realArr);  
+
+console.log(Array.isArray(["Adil"]));  // true
+console.log(Array.isArray("name"));  // false
+
+console.log(Array.from("Adil"));  // [ 'A', 'd', 'i', 'l' ]
+
+console.log(Array.from({name: "Adil"})); // []  4
+
+console.log(Array.of("Adil", "Saif",));  // [ 'Adil', 'Saif']
+
