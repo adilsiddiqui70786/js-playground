@@ -79,8 +79,8 @@ let myNewName = myOldName
 
 myNewName = "Mohd Adil"
 
-console.log(myOldName); 
-console.log(myNewName); 
+console.log(myOldName);  // Broken Aedil
+console.log(myNewName);  // Mohd Adil
 
 
 
@@ -89,9 +89,10 @@ let userOne = {
     password: 6578,
 }
 
-let userTwo = userOne
+let userTwo = userOne;
 
+userTwo.password = 12345;
 userTwo.email = "usertwo@gmail.com"
 
-console.log(userOne);
-console.log(userTwo);
+console.log(userOne);  // { email: 'usertwo@gmail.com', password: 12345 }
+console.log(userTwo);  // { email: 'usertwo@gmail.com', password: 12345 }

@@ -77,7 +77,8 @@ const y2 = x2++;
 //prefix
 let a = 3;
 const b = ++a;
-// a is 4; b is 3
+// a is 4; b is 4
+console.log(a);
 
 let a2 = 3n;
 const b2 = ++a2;
