@@ -92,4 +92,3 @@ console.log(Array.from("Adil"));  // [ 'A', 'd', 'i', 'l' ]
 console.log(Array.from({name: "Adil"})); // []  4
 
 console.log(Array.of("Adil", "Saif",));  // [ 'Adil', 'Saif']
-
