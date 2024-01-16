@@ -4,6 +4,7 @@
  values. Arrays can contain elements of any data type,
  including numbers, strings, objects, or even other arrays.
 
+ Array is object, Collection of multiple elements in single variables.
 */
 
 const myArr = [0, 1, 2, 3, 4, 5, 6]
