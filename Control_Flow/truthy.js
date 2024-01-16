@@ -49,3 +49,22 @@ True :
  0 == ''
 
 */
+
+// Nullish Coalescing Operator (??): null undefined
+
+// let val1;
+// val1 = 5 ?? 10;
+// val1 = null ?? 10; // 10
+//var1 = undefined ?? 15 //15
+
+// console.log(val1);
+
+// Terinary Operator
+
+// Condition ? (runs if true) : (runs if false)
+
+const iceCreamPrice = 10;
+
+iceCreamPrice >= 15
+	? console.log("Price is 5 rupees high")
+	: console.log("Price is good");
