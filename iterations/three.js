@@ -25,3 +25,9 @@ map.set("age", 20);
 for (const [key, value] of map) {
 	console.log(`${key} :- ${value}`);
 }
+
+// const myobj = {
+//   "game1": "free fire",
+//   "game2": "pubg",
+//   "game3": "call of duty"
+// }
