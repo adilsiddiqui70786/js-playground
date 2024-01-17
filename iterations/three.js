@@ -13,3 +13,15 @@ const greetings = "Asslam o Alaikum";
 for (const greet of greetings) {
 	console.log(`Character is ${greet}`);
 }
+
+// Maps: Unique , Holds key-value pairs and remembers the original insertion order of the keys.
+
+const map = new Map();
+map.set("name", "Hayatoh");
+map.set("age", 20);
+
+// console.log(map);
+
+for (const [key, value] of map) {
+	console.log(`${key} :- ${value}`);
+}
