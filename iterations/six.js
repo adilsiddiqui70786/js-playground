@@ -89,8 +89,10 @@ const books = [
 	},
 ];
 
-const userBooks = books.filter((book) => {
+let userBooks = books.filter((book) => {
 	return book.genre === "Fiction";
 });
 
+userBooks = books.filter((book) => book.published > 2015);
+console.log(userBooks);
 console.log(userBooks);
