@@ -93,6 +93,7 @@ let userBooks = books.filter((book) => {
 	return book.genre === "Fiction";
 });
 
-userBooks = books.filter((book) => book.published > 2015);
-console.log(userBooks);
+userBooks = books.filter(
+	(book) => book.published > 2015 && book.genre === "Fiction"
+);
 console.log(userBooks);
