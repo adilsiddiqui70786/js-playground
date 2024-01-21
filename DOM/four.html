@@ -38,11 +38,23 @@
     const secondLang = document.querySelector("li:nth-child(2)")
     // secondLang.innerText = "c++"
 
+    console.log(secondLang);
+
     const newLi = document.createElement("li")
     newLi.textContent = "C++"
 
     secondLang.replaceWith(newLi)
 
+
+    const firstLang = document.querySelector("li:nth-child(1)")
+
+    firstLang.outerHTML = "<li>C</li>"
+
+    //REMOVE
+
+    const lastLang = document.querySelector("li:last-child")
+
+    lastLang.remove()
 
 
   </script>
