@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM with Chai and COde</title>
+</head>
+
+<body>
+
+
+</body>
+<script>
+  const heading1 = document.createElement("h1")
+  console.log(heading1);
+  heading1.innerText = "Document Object Model";
+
+
+  const div1 = document.createElement("div")
+  div1.className = "main"
+  div1.id = Math.floor(Math.random() * 10 + 1)
+  console.log(div1);
+
+  div1.setAttribute("style", "background-color: red; color: white;")
+
+  // div1.innerText = "Hello World"
+  const addHello = document.createTextNode("Hello World")
+  div1.appendChild(addHello)
+
+  document.body.appendChild(heading1)
+  document.body.appendChild(div1)
+
+
+</script>
+
+</html>
