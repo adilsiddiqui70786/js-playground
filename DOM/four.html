@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+
+<body>
+  <ul class="language">
+    <li>JavaScript</li>
+
+  </ul>
+
+  <script>
+    function addLangugae(langName) {
+      const li = document.createElement("li")
+      li.innerText = `${langName}`
+      const parentUL = document.querySelector(".language");
+      parentUL.appendChild(li)
+
+      li.style.backgroundColor = "red"
+    }
+
+    addLangugae("Python")
+
+    function addOptiLang(langName) {
+      const li = document.createElement("li")
+      li.appendChild(document.createTextNode(langName))
+      document.querySelector(".language").appendChild(li)
+    }
+
+    addOptiLang("Java")
+
+  </script>
+</body>
+
+</html>
