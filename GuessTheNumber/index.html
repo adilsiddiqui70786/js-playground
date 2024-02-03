@@ -9,23 +9,33 @@
 </head>
 
 <body>
-  <h1>Number Guessing Game</h1>
 
-  <p>Try and guess a random number between 1 and 100.</p>
-  <p>You have 10 attempts to guess the right number.</p>
-  <br>
-  <form class="form">
-    <h1><label for="number">Guess a number</label><br>
-      <input id="number" type="text">
-    </h1>
+  <div class="wrapper">
+    <h1>Number Guessing Game</h1>
+
+    <p>Try and guess a random number between 1 and 100.</p>
+    <p>You have 10 attempts to guess the right number.</p>
     <br>
-    <button class="btn">Submit Guess</button>
+    <form class="form">
+      <h1><label for="guessField" id="guess">Guess a number</label><br>
+        <input id="guessField" class="guessField" type="text">
+      </h1>
+      <input id="subt" type="submit" value="Submit guess" class="guessSubmit">
+    </form>
 
-    <div class="result">Previous Guesses: </div>
-    <div class="result">Remaining Guesses: 10</div>
+    <div class="resultParas">
+      <div class="guesses">Previous Guesses: </div>
+      <div class="lastresult">Remaining Guesses: <span>10</span></div>
+      <p>
+      <div class="lowOrhi"></div>
+      </p>
+
+    </div>
+  </div>
 
 
-    <script src="app.js"></script>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
