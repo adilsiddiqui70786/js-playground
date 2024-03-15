@@ -1,0 +1,13 @@
+h2 {
+	font-family: "Gill Sans MT", " MS", sans-serif;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+	color: red;
+}
+
+body {
+	background-color: aquamarine;
+}
